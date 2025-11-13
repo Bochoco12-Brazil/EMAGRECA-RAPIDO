@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>I.A Fitness — Emagrecimento Inteligente</title>
+  <meta name="description" content="Programa de emagrecimento com planos personalizados por IA. Resultados reais, suporte profissional e garantia de segurança dos seus dados.">
+  <link rel="icon" href="data:,"><style>
+    :root{
+      --bg:#0b0b0b; --card:#0f1720; --accent:#1e90ff; --muted:#9aa4b2; --glass:rgba(255,255,255,0.04);
+      --radius:14px; --maxw:1100px; --ff-sans: 'Helvetica Neue', Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:var(--ff-sans);background:linear-gradient(180deg,#020203 0%,#07101a 100%);color:#e6eef6; -webkit-font-smoothing:antialiased}
+    .container{max-width:var(--maxw);margin:0 auto;padding:24px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#3b82f6);display:flex;align-items:center;justify-content:center;font-weight:700;color:#041428}
+    nav{display:flex;gap:18px;align-items:center}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600}
+    .cta{background:var(--accent);color:#021025;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr;gap:20px;align-items:center;padding:28px 0}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:20px;padding:20px;box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+    h1{font-size:clamp(22px,5vw,40px);margin:0 0 8px}
+    p.lead{color:var(--muted);margin:0 0 16px}
+    .hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:12px 18px;border-radius:12px;font-weight:700;text-decoration:none}
+    .btn-primary{background:var(--accent);color:#021025}
+    .btn-outline{border:1px solid rgba(255,255,255,0.08);color:var(--muted);background:transparent}
+
+    /* Trust */
+    .trust{display:flex;gap:12px;align-items:center;color:var(--muted);font-size:13px;margin-top:12px}
+    .badge{background:var(--glass);padding:8px 10px;border-radius:10px}
+
+    /* Plans */
+    .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
+    .plan{background:linear-gradient(180deg,#07101a, #0b1530);padding:18px;border-radius:14px;border:1px solid rgba(255,255,255,0.03)}
+    .plan h3{margin:0 0 6px}
+    .price{font-size:20px;font-weight:800;margin:8px 0}
+    .features{color:var(--muted);font-size:14px}
+
+    /* Testimonials & FAQ */
+    .grid-2{display:grid;grid-template-columns:1fr 360px;gap:16px;margin-top:20px}
+    .testimonials{background:var(--card);padding:16px;border-radius:12px}
+    blockquote{margin:0 0 12px;padding:12px;border-left:4px solid rgba(255,255,255,0.04);color:var(--muted)}
+    .faq{background:var(--card);padding:16px;border-radius:12px}
+
+    footer{margin-top:28px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:10px;align-items:center}
+
+    /* Responsive */
+    @media (max-width:900px){nav{display:none}.plans{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}.container{padding:16px}}
+
+    /* small helpers */
+    .small{font-size:13px;color:var(--muted)}
+    input,textarea,button{font-family:inherit}
+    .security{display:flex;gap:10px;align-items:center}
+  </style>
+  <script type="application/ld+json">{
+    "@context":"https://schema.org",
+    "@type":"MedicalBusiness",
+    "name":"I.A Fitness",
+    "url":"https://www.ia-fitness.example",
+    "description":"Programas de emagrecimento personalizados por inteligência artificial e equipe de nutrição.",
+    "sameAs":[],
+    "address":{ "@type":"PostalAddress", "addressCountry":"BR" }
+  }</script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">IA</div>
+        <div>
+          <div style="font-weight:800">I.A Fitness</div>
+          <div class="small">Emagrecimento inteligente e seguro</div>
+        </div>
+      </div>
+      <nav aria-label="menu">
+        <a href="#plans">Planos</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#faq">FAQ</a>
+        <a class="cta" href="#contato">Comece Agora</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <section class="hero-card">
+        <h1>Perda de peso de verdade — sem enrolação</h1>
+        <p class="lead">Plano personalizado entregue por IA + revisão humana. Dietas completas, treino adaptado e suporte que garante resultado. 30 dias de garantia ou seu dinheiro de volta.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#plans">Quero Emagrecer</a>
+          <a class="btn btn-outline" href="#faq">Como Funciona</a>
+          <div class="trust">
+            <span class="badge">+5.000 clientes</span>
+            <span class="badge">Pagamento Seguro</span>
+            <span class="badge">Suporte 24/7</span>
+          </div>
+        </div>
+        <div class="small" style="margin-top:10px">Dados criptografados — certificação SSL e conformidade com políticas de privacidade.</div>
+      </section>
+
+      <section aria-hidden="true">
+        <!-- espaço para imagem ou mockup -->
+        <div style="height:220px;border-radius:16px;background:linear-gradient(135deg, rgba(30,144,255,0.08), rgba(255,255,255,0.02));display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:700">
+          IMAGEM / MOCKUP AQUI
+        </div>
+      </section>
+    </main>
+
+    <section id="plans" class="plans">
+      <div class="plan">
+        <h3>Básico</h3>
+        <div class="price">R$19,90 <span class="small">/ 1 mês</span></div>
+        <div class="features">
+          • Plano nutricional completo enviado uma vez<br>
+          • Acompanhamento por e-mail<br>
+          • Acesso ao app web
+        </div>
+        <div style="margin-top:12px"><a class="btn btn-primary" href="#contato">Assinar</a></div>
+      </div>
+
+      <div class="plan">
+        <h3>Premium</h3>
+        <div class="price">R$14,90 <span class="small">/ mês (3 meses)</span></div>
+        <div class="features">
+          • Reavaliação quinzenal<br>
+          • Treinos adaptados<br>
+          • Suporte via chat
+        </div>
+        <div style="margin-top:12px"><a class="btn btn-primary" href="#contato">Assinar</a></div>
+      </div>
+
+      <div class="plan">
+        <h3>Elite</h3>
+        <div class="price">R$9,90 <span class="small">/ mês (6 meses)</span></div>
+        <div class="features">
+          • Plano completo entregue por IA<br>
+          • Revisões mensais com nutricionista<br>
+          • Garantia de satisfação
+        </div>
+        <div style="margin-top:12px"><a class="btn btn-primary" href="#contato">Assinar</a></div>
+      </div>
+    </section>
+
+    <section class="grid-2">
+      <div class="testimonials">
+        <h4 id="depoimentos">Depoimentos</h4>
+        <blockquote>"Perdi 10kg em 3 meses — o plano realmente funciona." <div class="small">— Mariana, 32</div></blockquote>
+        <blockquote>"Suporte rápido e dieta que cabe na minha rotina." <div class="small">— Carlos, 41</div></blockquote>
+        <div style="margin-top:12px" class="small">Resultados individuais variam. Sempre consulte um profissional quando houver condições de saúde pré-existentes.</div>
+      </div>
+
+      <aside class="faq">
+        <h4 id="faq">Perguntas Frequentes</h4>
+        <details><summary>Como recebo o plano?</summary><div class="small" style="margin-top:8px">O plano é enviado em PDF e disponível no painel do cliente.</div></details>
+        <details><summary>É seguro informar meus dados?</summary><div class="small" style="margin-top:8px">Utilizamos criptografia e não compartilhamos dados com terceiros sem consentimento.</div></details>
+        <details><summary>Posso cancelar?</summary><div class="small" style="margin-top:8px">Sim — política de reembolso em até 30 dias para novos assinantes.</div></details>
+      </aside>
+    </section>
+
+    <section id="contato" style="margin-top:20px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:16px;border-radius:12px">
+      <h4>Contato & Segurança</h4>
+      <form onsubmit="event.preventDefault();alert('Obrigado! Entraremos em contato.')" style="display:grid;gap:8px;max-width:640px">
+        <input type="text" placeholder="Nome" required style="padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
+        <input type="email" placeholder="Email" required style="padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
+        <textarea placeholder="Mensagem (objetivo, peso atual, meta)" rows="4" style="padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit"></textarea>
+        <div style="display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap">
+          <div class="security small">🔒 Pagamentos por gateway seguro • Dados criptografados</div>
+          <button class="btn btn-primary" type="submit">Enviar</button>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <div>© <strong>I.A Fitness</strong> — Todos os direitos reservados</div>
+      <div style="display:flex;gap:12px;align-items:center"><a class="small" href="#">Política de Privacidade</a><a class="small" href="#">Termos</a></div>
+    </footer>
+  </div>
+</body>
+</html>
